@@ -1,0 +1,237 @@
+\documentclass[10pt]{beamer}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc} % please support utf8
+\usepackage[backend=biber, sorting=nyt]{biblatex}
+\usepackage{tikz}
+\usepackage{appendixnumberbeamer}
+
+% \makeatletter
+% \def\input@path{{/media/yoannanciaux/DATA/DATA/Documents/Boulot/Coloque_et_formations/2018/Presentation_IGC-symposium_24-10-2018}}
+% \makeatother
+
+\usetheme[progressbar=frametitle]{metropolis}          % Use metropolis theme
+
+\title{Fisher's adaptive landscape across environments}
+\subtitle{Evolutionary rescue  and resistance in asexual populations}
+\date{October 29, 2018}
+\author{Yoann Anciaux}
+\institute{Bioinformatic research center Aarhus, Danemark.}
+
+
+\titlegraphic{
+  \includegraphics[width=.15\textwidth]{../Slides_SVG/UM-logo.png}\hfill
+  \includegraphics[width=.3\textwidth]{../Slides_SVG/ISEM-logo.png}\hfill
+  \includegraphics[width=.2\textwidth]{../Slides_SVG/Gaia-logo.png}\hfill
+  \includegraphics[width=.2\textwidth]{../Slides_SVG/Aarhus_university-logo.jpeg}
+}
+
+\makeatletter
+\setbeamertemplate{title page}{
+  \begin{minipage}[b][\paperheight]{\textwidth}
+    \vfill%
+    \ifx\inserttitle\@empty\else\usebeamertemplate*{title}\fi
+    \ifx\insertsubtitle\@empty\else\usebeamertemplate*{subtitle}\fi
+    \usebeamertemplate*{title separator}
+    \ifx\beamer@shortauthor\@empty\else\usebeamertemplate*{author}\fi
+    \ifx\insertdate\@empty\else\usebeamertemplate*{date}\fi
+    \ifx\insertinstitute\@empty\else\usebeamertemplate*{institute}\fi
+    \vfill
+    \ifx\inserttitlegraphic\@empty\else\inserttitlegraphic\fi
+    \vspace*{1cm}
+  \end{minipage}
+}
+\makeatother
+
+\begin{document}
+
+\maketitle
+
+
+\begin{frame}{Eco-evolutionary dynamics}
+  \def\file{../Slides_SVG/Intro_ER/Intro_ER.pdf}
+  \pdfximage{\file}
+  \edef\nbframes{\the\pdflastximagepages}
+
+ \begin{center}
+   \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Genetic basis of evolutionary rescue}
+  \def\file{../Slides_SVG/Intro_origin_of_genetic_variance/Intro_origin_of_genetic_variance.pdf}
+  \pdfximage{\file}
+  \edef\nbframes{\the\pdflastximagepages}
+
+  \begin{center}
+    \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Model of evolutionary rescue from mutation}
+  \def\file{../Slides_SVG/Intro_ER_from_mutations/Intro_ER_from_mutations.pdf}
+  \pdfximage{\file}
+  \edef\nbframes{\the\pdflastximagepages}
+
+  \begin{center}
+    \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[keepaspectratio, page=\i]{\file}}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Fisher's Geometric Model}
+  \def\file{../Slides_SVG/Intro_FGM/Intro_FGM.pdf}
+  \pdfximage{\file}
+  \edef\nbframes{\the\pdflastximagepages}
+
+  \begin{center}
+    \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Fisher's Geometric Model}
+  \def\file{../Slides_SVG/GXE_stress/GXE_stress.pdf}
+  \pdfximage{\file}
+  \edef\nbframes{\the\pdflastximagepages}
+
+  \begin{center}
+    \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Mutation regimes}
+  \def\file{../Slides_SVG/Intro_mutation_regimes/Intro_mutation_regimes.pdf}
+  \pdfximage{\file}
+  \edef\nbframes{\the\pdflastximagepages}
+
+  \begin{center}
+    \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+  \end{center}
+\end{frame}
+
+
+\section{Prediction of evolutionary rescue probabilities}
+
+
+\begin{frame}{Probability of evolutionary rescue against stress}
+  \def\file{../Slides_SVG/SAD_stress/SAD_stress-DN.pdf}
+  \pdfximage{\file}
+  \edef\nbframes{\the\pdflastximagepages}
+
+  \begin{center}
+    \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{The effective stress level ($\alpha$)}
+  \def\file{../Slides_SVG/SAD_stress/SAD_stress-PRa.pdf}
+  \pdfximage{\file}
+  \edef\nbframes{\the\pdflastximagepages}
+
+  \begin{center}
+    \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Proportion of ER from standing variance}
+  \def\file{../Slides_SVG/SAD_SV/SAD_SV.pdf}
+  \pdfximage{\file}
+  \edef\nbframes{\the\pdflastximagepages}
+
+  \begin{center}
+    \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+  \end{center}
+\end{frame}
+
+
+\begin{frame}{Summary}
+  \def\file{../Slides_SVG/Summary_ER/Summary_ER.pdf}
+  \pdfximage{\file}
+  \edef\nbframes{\the\pdflastximagepages}
+
+  \begin{center}
+    \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+  \end{center}
+\end{frame}
+
+
+\section{Fitness accross environments and genotypes}
+
+\begin{frame}{Landscape parametrization}
+\def\file{../Slides_SVG/Landscape_parametrization/Landscape_parametrization.pdf}
+\pdfximage{\file}
+\edef\nbframes{\the\pdflastximagepages}
+
+\begin{center}
+  \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Landscape parametrization}
+\def\file{../Slides_SVG/DFE_EmpLandscape/DFE_EmpLandscape.pdf}
+\pdfximage{\file}
+\edef\nbframes{\the\pdflastximagepages}
+
+\begin{center}
+  \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Mapping across environments and genotypes}
+\def\file{../Slides_SVG/Mapping/Mapping.pdf}
+\pdfximage{\file}
+\edef\nbframes{\the\pdflastximagepages}
+
+\begin{center}
+  \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Conclusions and Perspectives}
+\def\file{../Slides_SVG/Conclusion/Conclusion.pdf}
+\pdfximage{\file}
+\edef\nbframes{\the\pdflastximagepages}
+
+\begin{center}
+  \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+\end{center}
+\end{frame}
+
+
+\begin{frame}{Thanks}
+\def\file{../Slides_SVG/Thanks/Thanks.pdf}
+\pdfximage{\file}
+\edef\nbframes{\the\pdflastximagepages}
+
+\begin{center}
+  \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+\end{center}
+\end{frame}
+
+
+\appendix
+
+
+  \section{Appendix}
+
+
+\begin{frame}{Available data}
+\def\file{../Slides_SVG/Data_analysis/Data_analysis.pdf}
+\pdfximage{\file}
+\edef\nbframes{\the\pdflastximagepages}
+
+\begin{center}
+  \foreach \i in {1,...,\nbframes}{\includegraphics<\i>[ keepaspectratio, page=\i]{\file}}
+\end{center}
+\end{frame}
+
+\end{document}
